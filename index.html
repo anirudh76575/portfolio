@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body!-->
+<section>
+
   
-    <div class="circle"></div>
+  <div class="circle"></div>
   <div class="circle"></div>
   <div class="circle"></div>
   <div class="circle"></div>
@@ -27,20 +28,28 @@
     <header>
         <nav>
             <!--    <img src="asset/carepy_logo-1.svg" alt="">  -->
+            <div class="left" style="color:black; font-weight: 500; font-size: 25px;">Ashish's Portfolio</div>
+            <div class="right">
                 <ul>
                     <li><a href="#" class="active">About</a></li>
                     <li><a href="#portfolio-loc" class="active">Portfolio</a></li>
                     <li><a href="#contact-loc" class="active">Contact</a></li>
                 </ul>
+                </div>
         
             </nav>
             <div class="landing">
                 <div class="intro">
-                    <h3>I'M <Span>Ashish Banerjee</Span><br>3D Artist & Graphic designer<br>Texturing artist</h3>
-                    <button onclick="window.location.href='#contact-loc'">Contact Me</button>
+                    <h3>I'M <Span>Ashish Banerjee</Span></h3>
+                    <h3>I am a passionate</h3>
+                    <span id="element"></span>
+                       <button onclick="window.location.href='#contact-loc'">Contact Me</button>
                 </div>
+                   
             </div>
-        </header>
+        </header>  
+        
+
         <section class="about">
             <h1>About</h1>
             <div class="description">
@@ -226,6 +235,16 @@
         </div>
     </section>
     <script src="script.js"></script>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['3D Artist', 'Graphic designer','Texturing artist'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 
 </html>

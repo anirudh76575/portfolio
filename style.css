@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -15,9 +17,10 @@ body {
   min-height: 200vh; 
   overflow-x: hidden; 
   background: linear-gradient(270deg, #ff7e5f, #feb47b, #f7f305);
+  /*background: linear-gradient(270deg, #240244, #9704fa, #0b0383);*/
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
   text-align: center;
   position: relative; 
@@ -212,9 +215,10 @@ header {
     
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
+  height:40px;
   width: 90%;
   z-index: 99;
 }
@@ -229,6 +233,7 @@ header nav img {
 
 header nav ul {
   display: flex;
+  justify-content: space-around;
 }
 
 header nav ul li {
@@ -286,7 +291,7 @@ header nav .search i {
 /* Mobile View */
 @media (max-width: 600px) {
   header {
-    height: 100vh; /* Adjust height if necessary */
+    height: 70vh; /* Adjust height if necessary */
     padding: 20px 20px; /* Reduce padding for smaller screens */
     background-position: center; /* Center the background image */
     background-size: cover; /* Cover the entire header */
@@ -307,7 +312,7 @@ header nav .search i {
   }
 
   header nav ul li {
-    margin: 10px 0; /* Adjust margin for menu items */
+    margin: 8px 0; /* Adjust margin for menu items */
   }
 
   header nav .search {
@@ -319,7 +324,7 @@ header nav .search i {
     font-size: 14px; /* Adjust placeholder font size */
   }
 }
-.landing {
+ .landing {
   display: flex;
   height: 90vh;
   background-color: transparent;
@@ -344,6 +349,13 @@ header nav .search i {
   font-weight: 600;
   font-size: 3.5rem;
 }
+.landing .intro #element {
+  color: #080606;
+  font-weight: 500;
+  font-size: 32px;
+  margin-left: 10vw;
+ 
+}
 
 .intro button {
   height: 48px;
@@ -363,34 +375,43 @@ header nav .search i {
   color: #34353b;
 }
 
-/* Mobile View */
+
 @media (max-width: 600px) {
   .landing {
     flex-direction: column;
     height: auto;
-    padding: 20px;
+    padding: 450px 20px;
     justify-content: center;
   }
 
   .landing .intro h3 {
-    font-size: 24px; /* Adjust font size */
-    margin-left: 0; /* Remove left margin */
-    text-align: center; /* Center align text */
+    font-size: 20px; 
+    margin-left: 0; 
+    text-align: center;
+    font-weight:550;
   }
 
   .landing .intro h3 span {
-    font-size: 2.5rem; /* Adjust font size */
+    font-size: 2.25rem;
+  }
+
+  .landing .intro #element {
+    color: #080606;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 0vw;
+   
   }
 
   .intro button {
-    height: 40px; /* Adjust height */
-    width: 120px; /* Adjust width */
-    margin-top: 20px; /* Adjust margin-top */
-    margin-left: 0; /* Remove left margin */
-    align-self: center; /* Center align button */
+    height: 40px; 
+    width: 120px; 
+    margin-top: 0.5px; 
+    margin-left: 0; 
+    align-self: center; 
   }
 }
-.socials {
+  .socials {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -424,6 +445,8 @@ header nav .search i {
     font-size: 28px; /* Adjust icon size for smaller screens */
   }
 }
+
+
 .about {
   height: 50vh;
   width: 100vw;
@@ -435,7 +458,7 @@ header nav .search i {
   text-align: left;
   font-size: 56px;
   font-weight: 700;
-  color: #fa0b0b;
+  color: #0a0000;
   font-family: "Libre Baskerville", serif;
 }
 
@@ -459,6 +482,7 @@ header nav .search i {
   text-align: left;
   color: #0e0909;
   font-size: 20px;
+  font-weight:600;
 }
 
 .about .description p span {
@@ -480,7 +504,8 @@ header nav .search i {
   }
 
   .about .description p {
-    font-size: 16px; /* Adjust font size */
+    font-size: 13px; /* Adjust font size */
+    font-weight:600;
   }
 }
 
