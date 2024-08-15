@@ -546,7 +546,7 @@ header nav .search i {
 .skill-card {
   height: 20vw;
   width: 20vw;
-  background-color: #3d3e42;
+  background-color:  #1c034b;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -558,7 +558,9 @@ header nav .search i {
 }
 
 .skill-card:hover {
-  background-color: #1c034b;
+  background-color: #44095b;
+  transition-timing-function: ease;
+  box-shadow: 0 4px 8px 0 rgb(249 245 245 / 20%), 0 6px 20px 0 rgb(247 244 244 / 19%);
  
 }
 
@@ -927,6 +929,10 @@ header nav .search i {
   margin-top: 7.5vh;
 }
 
+.contact-card p{
+  padding:10px;
+}
+
 @media (max-width: 600px) {
   .contact-me {
     padding: 20px; 
@@ -948,4 +954,4 @@ header nav .search i {
     margin-top: 20px; 
     padding: 15px; 
   }
-}
+} 
